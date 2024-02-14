@@ -43,7 +43,7 @@ export default function List() {
           {data.result.allItems.map((item, index) => (
             <div key={index} style={style.card}>
               {item.name}
-              <button onClick={() => handleMoveToRight(index)}>{"->"}</button>
+              <button onClick={() => handleMoveToRight(index)}>&#8594;</button>
             </div>
           ))}
         </div>
@@ -54,7 +54,7 @@ export default function List() {
           {data.result.selectedItems.map((item, index) => (
             <div key={index} style={style.card}>
               {item.name}
-              <button onClick={() => handleMoveToLeft(index)}>{"<-"}</button>
+              <button onClick={() => handleMoveToLeft(index)}>&#8592;</button>
             </div>
           ))}
         </div>

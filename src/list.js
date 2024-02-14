@@ -38,7 +38,7 @@ export default function List() {
   return (
     <div style={style.container}>
       <div style={style.list}>
-        <h2>All Items</h2>
+        <h2>All Items {data.result.allItems.length}</h2>
         <div style={style.body}>
           {data.result.allItems.map((item, index) => (
             <div key={index} style={style.card}>
@@ -49,7 +49,7 @@ export default function List() {
         </div>
       </div>
       <div style={style.list}>
-        <h2>Selected Items 2</h2>
+        <h2>Selected Items {data.result.selectedItems.length}</h2>
         <div>
           {data.result.selectedItems.map((item, index) => (
             <div key={index} style={style.card}>
